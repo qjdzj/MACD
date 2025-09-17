@@ -1,0 +1,21 @@
+2025-07-25 22:54:21.890 | INFO     | __main__:run:206 - {'pathology': 'pericarditis', 'agent': 'ZeroShot', 'prompt_template': 'DIAGSUM', 'summarize': True, 'fewshot': False, 'criteria': False, 'guideline': 1, 'include_ref_range': False, 'bin_lab_results': False, 'bin_lab_results_abnormal': False, 'provide_diagnostic_criteria': False, 'include_tool_use_examples': False, 'abbreviated': True, 'self_consistency': False, 'only_abnormal_labs': False, 'seed': 397, 'local_logging': True, 'run_descr': None, 'first_patient': None, 'patient_list_path': None, 'order': 'pli', 'rr_name': 'RR', 'diag_crit_writer_openai_api_key': None, 'confirm_diagnosis': False, 'save_probabilities': False, 'data_dir': '/data2/kunzhang/LLM-MDM/MIMIC-human', 'llm_dir': '/data2/kunzhang/MIMIC-CDM_Models', 'save_dir': '/data2/kunzhang/LLM-MDM/results_human', 'lab_test_mapping_path': '/data2/kunzhang/LLM-MDM/MIMIC-human/lab_test_mapping.pkl', 'openai_api_key': None, 'model_name': 'Llama-3.1-70B-Instruct', 'max_context_length': 8192, 'exllama': False, 'system_tag_start': '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n', 'system_tag_end': '<|eot_id|>', 'user_tag_start': '<|start_header_id|>user<|end_header_id|>\n\n', 'user_tag_end': '<|eot_id|>', 'ai_tag_start': '<|start_header_id|>assistant<|end_header_id|>\n\n', 'ai_tag_end': '<|eot_id|>', 'stop_words': ['<|eot_id|>', '<|end_of_text|>', '<|eom_id|>']}
+2025-07-25 22:54:21.893 | INFO     | __main__:run:262 - Processing patient: 23518797
+2025-07-25 22:54:32.608 | INFO     | __main__:run:262 - Processing patient: 24758800
+2025-07-25 22:54:45.786 | INFO     | __main__:run:262 - Processing patient: 23794177
+2025-07-25 22:54:55.539 | INFO     | __main__:run:262 - Processing patient: 28628679
+2025-07-25 22:55:05.349 | INFO     | __main__:run:262 - Processing patient: 29990181
+2025-07-25 22:55:13.835 | INFO     | __main__:run:262 - Processing patient: 27923459
+2025-07-25 22:55:29.099 | INFO     | __main__:run:262 - Processing patient: 24563659
+2025-07-25 22:55:41.367 | INFO     | __main__:run:262 - Processing patient: 21411269
+2025-07-25 22:55:49.765 | INFO     | __main__:run:262 - Processing patient: 29427604
+2025-07-25 22:56:02.836 | INFO     | __main__:run:262 - Processing patient: 28489460
+2025-07-25 22:56:14.985 | INFO     | __main__:run:262 - Processing patient: 29809301
+2025-07-25 22:56:26.889 | INFO     | __main__:run:262 - Processing patient: 23132022
+2025-07-25 22:56:41.781 | INFO     | __main__:run:262 - Processing patient: 25184896
+2025-07-25 22:56:52.010 | INFO     | __main__:run:262 - Processing patient: 27774356
+2025-07-25 22:57:20.802 | INFO     | __main__:run:262 - Processing patient: 29698110
+2025-07-25 22:57:27.979 | INFO     | __main__:run:262 - Processing patient: 29772483
+2025-07-25 22:57:43.940 | INFO     | __main__:run:262 - Processing patient: 22729800
+2025-07-25 22:57:58.969 | INFO     | __main__:run:262 - Processing patient: 26792267
+2025-07-25 22:58:11.286 | INFO     | __main__:run:262 - Processing patient: 22634484
+2025-07-25 22:58:24.395 | INFO     | __main__:run:262 - Processing patient: 22100722

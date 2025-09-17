@@ -1,0 +1,21 @@
+2025-07-25 20:51:41.776 | INFO     | __main__:run:206 - {'pathology': 'diverticulitis', 'agent': 'ZeroShot', 'prompt_template': 'DIAGSUM', 'summarize': True, 'fewshot': False, 'criteria': False, 'guideline': 1, 'include_ref_range': False, 'bin_lab_results': False, 'bin_lab_results_abnormal': False, 'provide_diagnostic_criteria': False, 'include_tool_use_examples': False, 'abbreviated': True, 'self_consistency': False, 'only_abnormal_labs': False, 'seed': 2025, 'local_logging': True, 'run_descr': None, 'first_patient': None, 'patient_list_path': None, 'order': 'pli', 'rr_name': 'RR', 'diag_crit_writer_openai_api_key': None, 'confirm_diagnosis': False, 'save_probabilities': False, 'data_dir': '/data2/kunzhang/LLM-MDM/MIMIC-human', 'llm_dir': '/data2/kunzhang/MIMIC-CDM_Models', 'save_dir': '/data2/kunzhang/LLM-MDM/results_human', 'lab_test_mapping_path': '/data2/kunzhang/LLM-MDM/MIMIC-human/lab_test_mapping.pkl', 'openai_api_key': None, 'model_name': 'Llama-3.1-8B-Instruct', 'max_context_length': 8192, 'exllama': False, 'system_tag_start': '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n', 'system_tag_end': '<|eot_id|>', 'user_tag_start': '<|start_header_id|>user<|end_header_id|>\n\n', 'user_tag_end': '<|eot_id|>', 'ai_tag_start': '<|start_header_id|>assistant<|end_header_id|>\n\n', 'ai_tag_end': '<|eot_id|>', 'stop_words': ['<|eot_id|>', '<|end_of_text|>', '<|eom_id|>']}
+2025-07-25 20:51:41.779 | INFO     | __main__:run:262 - Processing patient: 24510562
+2025-07-25 20:51:47.978 | INFO     | __main__:run:262 - Processing patient: 27371462
+2025-07-25 20:51:51.068 | INFO     | __main__:run:262 - Processing patient: 25695876
+2025-07-25 20:51:54.481 | INFO     | __main__:run:262 - Processing patient: 20326816
+2025-07-25 20:51:57.994 | INFO     | __main__:run:262 - Processing patient: 24590497
+2025-07-25 20:52:01.058 | INFO     | __main__:run:262 - Processing patient: 22429578
+2025-07-25 20:52:05.324 | INFO     | __main__:run:262 - Processing patient: 25231061
+2025-07-25 20:52:10.284 | INFO     | __main__:run:262 - Processing patient: 29137933
+2025-07-25 20:52:15.355 | INFO     | __main__:run:262 - Processing patient: 20605087
+2025-07-25 20:52:20.065 | INFO     | __main__:run:262 - Processing patient: 23962694
+2025-07-25 20:52:51.012 | INFO     | __main__:run:262 - Processing patient: 26953508
+2025-07-25 20:52:53.365 | INFO     | __main__:run:262 - Processing patient: 21314019
+2025-07-25 20:52:58.187 | INFO     | __main__:run:262 - Processing patient: 29448773
+2025-07-25 20:53:03.991 | INFO     | __main__:run:262 - Processing patient: 23794171
+2025-07-25 20:53:08.822 | INFO     | __main__:run:262 - Processing patient: 29581868
+2025-07-25 20:53:13.699 | INFO     | __main__:run:262 - Processing patient: 29328838
+2025-07-25 20:53:16.809 | INFO     | __main__:run:262 - Processing patient: 24229122
+2025-07-25 20:53:21.107 | INFO     | __main__:run:262 - Processing patient: 21906103
+2025-07-25 20:53:49.885 | INFO     | __main__:run:262 - Processing patient: 23579957
+2025-07-25 20:53:56.203 | INFO     | __main__:run:262 - Processing patient: 29458039

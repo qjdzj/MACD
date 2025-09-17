@@ -1,0 +1,21 @@
+2025-07-25 21:39:19.361 | INFO     | __main__:run:206 - {'pathology': 'appendicitis', 'agent': 'ZeroShot', 'prompt_template': 'DIAGSUM', 'summarize': True, 'fewshot': False, 'criteria': False, 'guideline': 1, 'include_ref_range': False, 'bin_lab_results': False, 'bin_lab_results_abnormal': False, 'provide_diagnostic_criteria': False, 'include_tool_use_examples': False, 'abbreviated': True, 'self_consistency': False, 'only_abnormal_labs': False, 'seed': 4848, 'local_logging': True, 'run_descr': None, 'first_patient': None, 'patient_list_path': None, 'order': 'pli', 'rr_name': 'RR', 'diag_crit_writer_openai_api_key': None, 'confirm_diagnosis': False, 'save_probabilities': False, 'data_dir': '/data2/kunzhang/LLM-MDM/MIMIC-human', 'llm_dir': '/data2/kunzhang/MIMIC-CDM_Models', 'save_dir': '/data2/kunzhang/LLM-MDM/results_human', 'lab_test_mapping_path': '/data2/kunzhang/LLM-MDM/MIMIC-human/lab_test_mapping.pkl', 'openai_api_key': None, 'model_name': 'Llama-3.1-8B-Instruct', 'max_context_length': 8192, 'exllama': False, 'system_tag_start': '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n', 'system_tag_end': '<|eot_id|>', 'user_tag_start': '<|start_header_id|>user<|end_header_id|>\n\n', 'user_tag_end': '<|eot_id|>', 'ai_tag_start': '<|start_header_id|>assistant<|end_header_id|>\n\n', 'ai_tag_end': '<|eot_id|>', 'stop_words': ['<|eot_id|>', '<|end_of_text|>', '<|eom_id|>']}
+2025-07-25 21:39:19.364 | INFO     | __main__:run:262 - Processing patient: 23919775
+2025-07-25 21:39:23.988 | INFO     | __main__:run:262 - Processing patient: 27359600
+2025-07-25 21:39:26.324 | INFO     | __main__:run:262 - Processing patient: 25075835
+2025-07-25 21:39:28.701 | INFO     | __main__:run:262 - Processing patient: 29139940
+2025-07-25 21:39:34.357 | INFO     | __main__:run:262 - Processing patient: 28434109
+2025-07-25 21:39:36.787 | INFO     | __main__:run:262 - Processing patient: 22699482
+2025-07-25 21:39:39.301 | INFO     | __main__:run:262 - Processing patient: 21800917
+2025-07-25 21:39:42.315 | INFO     | __main__:run:262 - Processing patient: 21770269
+2025-07-25 21:39:49.261 | INFO     | __main__:run:262 - Processing patient: 26563556
+2025-07-25 21:39:52.661 | INFO     | __main__:run:262 - Processing patient: 20962171
+2025-07-25 21:39:55.688 | INFO     | __main__:run:262 - Processing patient: 26258346
+2025-07-25 21:39:59.869 | INFO     | __main__:run:262 - Processing patient: 21343513
+2025-07-25 21:40:03.085 | INFO     | __main__:run:262 - Processing patient: 27569427
+2025-07-25 21:40:07.072 | INFO     | __main__:run:262 - Processing patient: 20435332
+2025-07-25 21:40:10.427 | INFO     | __main__:run:262 - Processing patient: 23671522
+2025-07-25 21:40:14.380 | INFO     | __main__:run:262 - Processing patient: 27229828
+2025-07-25 21:40:19.508 | INFO     | __main__:run:262 - Processing patient: 22739882
+2025-07-25 21:40:22.430 | INFO     | __main__:run:262 - Processing patient: 22333055
+2025-07-25 21:40:27.497 | INFO     | __main__:run:262 - Processing patient: 23426219
+2025-07-25 21:40:50.919 | INFO     | __main__:run:262 - Processing patient: 24756135

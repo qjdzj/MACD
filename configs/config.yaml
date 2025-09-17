@@ -1,0 +1,33 @@
+defaults:
+  - _self_
+  - paths: example 
+  - model: Llama3Instruct8B
+
+pathology: pneumonia
+agent: ZeroShot
+prompt_template: DIAGSUM
+summarize: True
+fewshot: False
+criteria: False
+guideline: True
+
+
+include_ref_range: False
+bin_lab_results: False
+bin_lab_results_abnormal: False
+provide_diagnostic_criteria: False
+include_tool_use_examples: False
+abbreviated: True
+self_consistency: False
+only_abnormal_labs: False
+use_past_diagnosis: True
+seed: 2023
+local_logging: True
+run_descr:
+first_patient:
+patient_list_path: 
+order: pli
+rr_name: RR
+diag_crit_writer_openai_api_key:
+confirm_diagnosis: False
+save_probabilities: False

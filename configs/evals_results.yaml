@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+
+evals_path:  # path to the evaluation results witr model name
+output_path: # path to save the evaluation results
+model_name:  # model name
+pathology: 
+
+
+patient_list_path:
