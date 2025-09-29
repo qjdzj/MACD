@@ -118,11 +118,10 @@ This project is built upon and extends the work from the MIMIC Clinical Decision
 If you use this code or dataset in your research, please cite our paper:
 
 ```
-@article{your_paper_here,
-  title={Your Paper Title},
-  author={Author Name(s)},
-  journal={Journal or Conference Name},
-  year={Year},
-  doi={}
+@article{li2025macd,
+  title={MACD: Multi-Agent Clinical Diagnosis with Self-Learned Knowledge for LLM},
+  author={Li, Wenliang and Yan, Rui and Zhang, Xu and Chen, Li and Zhu, Hongji and Zhao, Jing and Li, Junjun and Li, Mengru and Cao, Wei and Jiang, Zihang and others},
+  journal={arXiv preprint arXiv:2509.20067},
+  year={2025}
 }
 ```
