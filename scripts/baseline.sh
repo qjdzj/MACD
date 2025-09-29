@@ -19,7 +19,6 @@ do
         pathology="$pathology"
 done
 
-#将reference的具体内容去除，只保留疾病名称获得的baseline
 for pathology in appendicitis cholecystitis diverticulitis pancreatitis pneumonia "pulmonary embolism" pericarditis
 do
     CUDA_VISIBLE_DEVICES=2 python infer.py \

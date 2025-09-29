@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # --- 配置区 ---
 # 1. 设置包含 "round" 文件夹的基础目录路径 (也是我们希望的输出目录)
-base_path = '/data2/kunzhang/MIMIC-CDM/MIMIC-Clinical-Decision-Making-Framework-llama3.1/eval_round2/mayo_clinic'
+base_path = 
 
 # 2. 将输出路径设置为与基础路径相同
 output_path = base_path

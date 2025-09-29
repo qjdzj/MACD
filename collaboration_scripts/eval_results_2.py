@@ -4,7 +4,7 @@ import re
 import sys
 
 # 配置区：请确保这些路径是正确的
-CSV_DIRECTORY = '/data2/kunzhang/MIMIC-CDM/MIMIC-Clinical-Decision-Making-Framework-llama3.1/eval_round2/ours'
+CSV_DIRECTORY = 
 OUTPUT_DIRECTORY = CSV_DIRECTORY
 
 
