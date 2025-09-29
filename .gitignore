@@ -1,4 +1,5 @@
-/data/
+/data/debug.py
+/data/test_id_difficulty.py
 
 /result_human/
 /result2/
