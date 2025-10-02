@@ -23,12 +23,6 @@ MACD/
 
 ## Getting Started
 
-### Prerequisites
-
-- Python 3.10
-- Required Python packages (see requirements.txt)
-- Access local model weights
-
 ### Models
 - meta-llama/Llama-3.1-8B-Instruct: [https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - meta-llama/Llama-3.1-70B-Instruct: [https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct)
