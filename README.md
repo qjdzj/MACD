@@ -43,6 +43,36 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Data
+
+You can obtain the complete dataset from the [data/](./data/) directory, or obtain the actual data used for testing from [test_set/](./data/test_set/) directory.
+
+
+### Specialized Prompts
+
+Different agent prompts can be imported from the [agents/](./agents/) directory:
+- Self-learned knowledge
+- Mayo Clinic guidelines
+- Professional guidelines
+
+### Inference Script
+
+The main inference script is [infer.py](./infer.py), which supports various configurations through command-line arguments:
+
+```bash
+python infer.py \
+    model="Llama3Instruct8B" \
+    pathology="pneumonia" \
+    [other_options]
+```
+
+Key options include:
+- `model`: Specifies the LLM to use (Llama3Instruct8B, Llama3Instruct70B, Deepseek-Llama70B-distill)
+- `pathology`: Target disease for diagnosis (appendicitis, cholecystitis, diverticulitis, pancreatitis, pneumonia, pulmonary embolism, pericarditis)
+- `criteria`: Enable diagnostic criteria
+- `guideline`: Enable clinical guidelines
+- `fewshot`: Enable few-shot learning examples
+
 ### Running Experiments
 
 The project provides automated experiment execution through bash scripts located in the ./scripts/ directory. These scripts call the main inference script infer.py with different configurations.
@@ -72,30 +102,6 @@ bash scripts/human_cases.sh
 bash scripts/inconsistent_with_past.sh
 ```
 
-### Inference Script
-
-The main inference script is [infer.py](./infer.py), which supports various configurations through command-line arguments:
-
-```bash
-python infer.py \
-    model="Llama3Instruct8B" \
-    pathology="pneumonia" \
-    [other_options]
-```
-
-Key options include:
-- `model`: Specifies the LLM to use (Llama3Instruct8B, Llama3Instruct70B, Deepseek-Llama70B-distill)
-- `pathology`: Target disease for diagnosis (appendicitis, cholecystitis, diverticulitis, pancreatitis, pneumonia, pulmonary embolism, pericarditis)
-- `criteria`: Enable diagnostic criteria
-- `guideline`: Enable clinical guidelines
-- `fewshot`: Enable few-shot learning examples
-
-### Specialized Prompts
-
-Different agent prompts can be imported from the [agents/](./agents/) directory:
-- Self-learned knowledge
-- Mayo Clinic guidelines
-- Professional guidelines
 
 ### Evaluation
 
