@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ### Data
 
-You can obtain the complete dataset from the [data/](./data/) directory, or obtain the actual data used for testing from [test_set/](./data/test_set/) directory.
+You can obtain the complete dataset from the [data/](./MACD-data/) directory, the actual data used for testing from [test_set/](./MACD-data/test_set/) directory, and the data used for human physicians evaluation can be obtained from [MACD-human/](./MACD-data/MACD-human/)
 
 
 ### Specialized Prompts
@@ -111,9 +111,11 @@ Results can be evaluated using the [evaluate.py](./evaluate.py) script:
 python evaluate.py
 ```
 
-### Analysis
-
 The [collaboration_scripts/](./collaboration_scripts/) directory contains analysis tools for evaluating MACD-human collaboration workflow experiments.
+
+### Self learned knowledge acquisition
+
+You can run the model from the script in the [self-knowledge_scripts/](./self-knowledge_scripts/) directory to obtain the corresponding self learned knowledge and fully experience the entire process of MACD. However, this will be a long process
 
 ## Acknowledgements
 
