@@ -30,11 +30,8 @@ MACD/
 - Access local model weights
 
 meta-llama/Llama-3.1-8B-Instruct: [https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
-
 meta-llama/Llama-3.1-70B-Instruct: [https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct)
-
 deepseek-ai/DeepSeek-R1-Distill-Llama-70B: [https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B)
-
 BioBert: [https://huggingface.co/pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb/tree/main](https://huggingface.co/pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb/tree/main)
 
 
