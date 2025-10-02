@@ -10,8 +10,8 @@ from omegaconf import DictConfig
 from dataset.utils import load_hadm_from_file
 from utils.logging import read_from_pickle_file
 
-evals_path = "/home1/kunzhang/MIMIC-CDM/MIMIC-Clinical-Decision-Making-Framework-llama3.1/logs/Llama3.1-8B_PLI_N_DIAGSUM_chest" # path to the evaluation results witr model name
-output_path = "/home1/kunzhang/MIMIC-CDM/MIMIC-Clinical-Decision-Making-Framework-llama3.1/auto-prompting/Llama-3.1-8B-Instruct" # path to save the correct patient IDs and diagnoses
+evals_path = "" # path to the evaluation results witr model name
+output_path = "" # path to save the correct patient IDs and diagnoses
 
 
 def create_correct_ids():
@@ -20,8 +20,8 @@ def create_correct_ids():
     # for patho in ["appendicitis", "cholecystitis", "diverticulitis", "pancreatitis"]:
     for model in [
         "Llama-3.1-8B-Instruct"
-        # "Llama-3.1-70B-Instruct",
-        # "DeepSeek-R1-Distill-Llama-70B"
+        "Llama-3.1-70B-Instruct",
+        "DeepSeek-R1-Distill-Llama-70B"
     ]:
     # load all evaluation results
         all_evals = load_hadm_from_file(
@@ -53,25 +53,18 @@ def create_correct_id_info():
     id_path = output_path
     result_path = evals_path
     for model in [
-        # "TheBloke_Llama-2-70B-chat-GPTQ",
         "Llama-3.1-8B-Instruct"
-        # "Llama-3.1-70B-Instruct",
-        # "OpenBioLLM-70B",
-        # "DeepSeek-R1-Distill-Llama-70B"
-        #"Llama2-70B-OASST-SFT-v10-GPTQ",
-        #"WizardLM-70B-V1.0-GPTQ",
-        # "ClinicalCamel-70B-GPTQ",
-        # "Meditron-70B-GPTQ",
-        # "Llama2-70B-OASST-SFT-v10-GPTQ_gptq-4bit-32g-actorder_True",    
+        "Llama-3.1-70B-Instruct",
+        "DeepSeek-R1-Distill-Llama-70B" 
     ]:
         run = f"_{model}_*_FULL_INFO_*results.pkl"
         assert "result" in run
 
         for patho in [
-            # "appendicitis", 
-            # "cholecystitis", 
-            # "diverticulitis", 
-            # "pancreatitis",
+            "appendicitis", 
+            "cholecystitis", 
+            "diverticulitis", 
+            "pancreatitis",
             "pericarditis",
             "pneumonia",
             "pulmonary embolism",

@@ -1,5 +1,5 @@
 import os 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 import pickle
 import logging
@@ -112,14 +112,11 @@ def load_model(model_id):
     top_p=0.95,
     repetition_penalty=1.2,
     pad_token_id=tokenizer.eos_token_id,
-    truncation=False  # 显式指定截断策略
+    truncation=False  
 )
     return text_gen_pipeline
 
 def generate_summary(text_gen_pipeline, prompt):
-    """
-    利用模型生成总结。
-    """
     input_text = str(f"{prompt}")
     outputs = text_gen_pipeline(input_text, max_length=8192, num_return_sequences=1)
     summary = outputs[0]['generated_text']
@@ -128,35 +125,32 @@ def generate_summary(text_gen_pipeline, prompt):
 def main():
     for model in [
         "Llama-3.1-70B-Instruct",
-        # "Llama-3.1-70B-Instruct",
-        #   "OpenBioLLM-70B",
-        #   "DeepSeek-R1-Distill-Llama-70B",
+        "Llama-3.1-70B-Instruct",
+          "DeepSeek-R1-Distill-Llama-70B",
         ]:
-    # 设置文件路径
-        correct_diag_result_file = join(f"/home1/kunzhang/MIMIC-CDM/MIMIC-Clinical-Decision-Making-Framework-llama3.1/auto-prompting/{model}")  # 替换为您的 diagcrit.pkl 文件路径
-        # summary_output_file = '/home1/kunzhang/MIMIC-CDM2/MIMIC-Clinical-Decision-Making-Framework-llama3.1/auto-prompting'  # 替换为您希望保存总结的路径
-        model_id = join(f"/data2/kunzhang/MIMIC-CDM_Models/{model}")  # 替换为您的模型名称或本地路径
+        
+        correct_diag_result_file = join(f"") # path to the correct diagnoses results
+        model_id = join(f"/data2/kunzhang/MIMIC-CDM_Models/{model}") 
         text_gen_pipeline = load_model(model_id)
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        output_file = f"/home1/kunzhang/MIMIC-CDM/MIMIC-Clinical-Decision-Making-Framework-llama3.1/auto-prompting/{model}/diagnostic_summary_{timestamp}.txt"
+        output_file = f""
 
         with open(output_file, "w") as f:
             for patho in [
                 "appendicitis", 
                 "cholecystitis", 
                 "diverticulitis", 
-                "pancreatitis", 
-                # "pneumonia",
+                "pancreatitis",
+                "pericarditis",
+                "pneumonia",
+                "pulmonary embolism",
         ]:
                 n = 3
                 for i in range(n):
-                    # 加载诊断数据
                     correct_diag_result = load_correct_diag_result(correct_diag_result_file, patho,model,i)
                     
-                    # 创建提示
                     prompt = create_prompt(correct_diag_result)
                     
-                    # 生成总结
                     summary = generate_summary(text_gen_pipeline, prompt)
                     
                     print(summary)
